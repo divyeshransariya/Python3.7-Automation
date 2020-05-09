@@ -52,7 +52,6 @@ def send_slack_notification(
 
 ## Example implementation
 
-<img width="536" alt="Failure notification" src="https://user-images.githubusercontent.com/14880945/58114709-a1e8b880-7bf8-11e9-9da1-f5fd37dd1af8.png">
 
 Send a notification with selected [context details](https://github.com/apache/airflow/blob/v1-10-stable/airflow/models/taskinstance.py#L1168-L1206) in a [message attachment](https://api.slack.com/docs/message-attachments) when a task fails using `default_args`.
 
