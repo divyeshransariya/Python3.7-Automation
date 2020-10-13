@@ -13,18 +13,18 @@ def sanity_check(payout_file, trading_date_file, matched_with="",**kwargs):
             assert _seg2.strip("\n") == matched_with, "Expected segment %s recieved %s!.."%(matched_with, _seg2)
     return True
 
-def get_exchange_name(exchang_id):
-    if exchang_id == "NseFO":
-        return "nse_fo"
-    if exchang_id == "NseCM":
-        return "nse_cm"
-    if exchang_id == "NseCD":
-        return "nse_cd"
-    if exchang_id == "BseCD":
-        return "bse_cd"
-    if exchang_id == "SgxFO":
-        return "sgx_fo"
-    raise ValueError("Invalid exchange id %s! .. exiting.."%exchang_id)
+# def get_exchange_name(exchang_id):
+#     if exchang_id == "NseFO":
+#         return "nse_fo"
+#     if exchang_id == "NseCM":
+#         return "nse_cm"
+#     if exchang_id == "NseCD":
+#         return "nse_cd"
+#     if exchang_id == "BseCD":
+#         return "bse_cd"
+#     if exchang_id == "SgxFO":
+#         return "sgx_fo"
+#     raise ValueError("Invalid exchange id %s! .. exiting.."%exchang_id)
 
 def get_last_thrusday(Date):
     from dateutil.relativedelta import relativedelta, TH
